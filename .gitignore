@@ -49,3 +49,7 @@ web/node_modules
 **/.terraform
 **/terraform.tfstate*
 #lambda package zip files
+
+# event store
+eventstore
+data
