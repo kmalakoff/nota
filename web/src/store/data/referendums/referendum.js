@@ -2,9 +2,6 @@ import { observable, reaction, computed } from 'mobx';
 import uuid from 'node-uuid';
 
 export default class Vote {
-    /**
-     * unique id of this vote, immutable.
-     */
   id = null;
 
     @observable completed = false;

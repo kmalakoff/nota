@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { withRouter } from 'react-router';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import cx from 'classnames';
@@ -6,8 +7,8 @@ import cx from 'classnames';
 @withRouter
 export default class Header extends React.Component {
   static propTypes = {
-    location: React.PropTypes.object.isRequired,
-    history: React.PropTypes.object.isRequired,
+    location: PropTypes.object.isRequired,
+    history: PropTypes.object.isRequired,
   };
 
   render() {

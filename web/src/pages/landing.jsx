@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import appLayout from '../decorators/appLayout';
 
 @appLayout
 export default class LandingPage extends React.Component {
-  static contextTypes = { store: React.PropTypes.object.isRequired };
+  static contextTypes = { store: PropTypes.object.isRequired };
   static propTypes = {};
 
   render() {
