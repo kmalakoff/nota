@@ -22,8 +22,8 @@ export default class ReferendumStore {
   }
 
   updateReferendumFromServer(json) {
-    let referendum = this.referendums.find(x => x.id === json.id);
-    if (!referendum) { referendum = new Referendum(this, json.id); this.referendums.push(referendum); }
+    let referendum = this.referendums.find(x => x.referendumId === json.referendumId);
+    if (!referendum) { referendum = new Referendum(this, json.referendumId); this.referendums.push(referendum); }
     referendum.updateFromJson(json);
   }
 
@@ -35,6 +35,6 @@ export default class ReferendumStore {
 
   removeReferendum(referendum) {
     this.referendums.splice(this.referendums.indexOf(referendum), 1);
-    referendum.dispose();
+    // referendum.dispose();
   }
 }

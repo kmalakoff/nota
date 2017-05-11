@@ -8,6 +8,10 @@ export default class RegisterPage extends React.Component {
   static propTypes = {};
 
   render() {
-    return <div>Voter registration.</div>;
+    return (
+      <div>
+        <h1>Voter registration</h1>
+      </div>
+    );
   }
 }
