@@ -1,7 +1,7 @@
-import Votes from './votes';
+import Referendums from './referendums';
 
 export default class DataStore {
   constructor(options = {}, store) {
-    this.votes = new Votes(options, store);
+    this.referendums = new Referendums(options, store);
   }
 }

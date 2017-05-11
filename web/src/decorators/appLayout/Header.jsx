@@ -23,6 +23,7 @@ export default class Header extends React.Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
+            <NavItem className={cx({ active: location.pathname.startsWith('/referendums') })} onClick={() => history.push('/referendums')} >Referendums</NavItem>
             <NavItem className={cx({ active: location.pathname.startsWith('/register') })} onClick={() => history.push('/register')} >Register</NavItem>
             <NavDropdown title="Account" id="header-nav-account-dropdown">
               <MenuItem onClick={() => { window.location = '/logout'; }}>Logout</MenuItem>

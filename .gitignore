@@ -56,7 +56,3 @@ web/node_modules
 .vagrant
 EventStore-OSS-Ubuntu-*
 Vagrantfile
-
-# Docker
-docker
-**/Dockerfile*
